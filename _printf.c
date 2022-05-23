@@ -28,6 +28,7 @@ int _printf(const char *format, ...)
 /**
  *loop format
  */
+
 int loop_format(va_list arg, const char *string)
 {
 	int i = 0, flag = 0, cont_fm = 0, cont = 0, check_per = 0;
