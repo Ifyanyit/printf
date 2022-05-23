@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
 /**
  * _putchar - writes the character c to stdout
- * @c: the character to print
+ * @c: The character to print
  *
- * Return: On success 1
- * On error, -1 is returned, and error no is set appropraitely
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c)
 {
@@ -29,10 +30,10 @@ int _strlen(char *s)
 	return (len);
 }
 /**
- * _puts - print string
- * Description: print some string
- * @str: pointer char
- * Return: Nothig
+ *_puts - print string
+ *Description: print some string
+ *@str: pointer char
+ *Return: Nothing
  */
 void _puts(char *str)
 {
@@ -44,13 +45,13 @@ void _puts(char *str)
 	}
 }
 /**
- * convert_to - convert numbers
- * Description: This function convert to other formats
- * decimal, octal, hexadecimal, binary etc
- * @representation: char representation[] = "0123456789ABCDEF";
- * @num: num to transform
- * @base: base to transform num'
- * Return: number into char pointer
+ *convert_to - convert numbers
+ *Description: This function convert numbers to other formats
+ *decimal, octal, hexadecimal, binary etc..
+ *@representation: char representation[] = "0123456789ABCDEF";
+ *@num: num to tranasform
+ *@base: base to transform num
+ *Return: number into char pointer
  */
 char *convert_to(char representation[], unsigned int num, int base)
 {
@@ -61,7 +62,7 @@ char *convert_to(char representation[], unsigned int num, int base)
 	ptr = &buffer[127];
 	*ptr = '\0';
 
-	do { 
+	do {
 		mod = num % base;
 		*--ptr = representation[mod];
 		num /= base;
