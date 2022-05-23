@@ -72,7 +72,7 @@ int print_string(va_list arg)
 	s = va_arg(arg, char *);
 	if (!s)
 	{
-		s = "(null)';
+		s = "(null)";
 		_puts(s);
 
 		return (_strlen(s));

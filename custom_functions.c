@@ -18,7 +18,7 @@ int _putchar(char c)
  *@s: pointer char
  *Return: int length
  */
-int _strlen(char *s)Des
+int _strlen(char *s)
 {
 	int len = 0;
 
@@ -40,7 +40,7 @@ void _puts(char *str)
 
 	for (i = 0; i < _strlen(str); i++)
 	{
-		_putchar(str[i]);cd
+		_putchar(str[i]);
 	}
 }
 /**
@@ -68,4 +68,3 @@ char *convert_to(char representation[], unsigned int num, int base)
 	} while (num != 0);
 	return (ptr);
 }
-
